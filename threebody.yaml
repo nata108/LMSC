@@ -1,0 +1,64 @@
+name: threebody
+enabled: true
+required: true
+plugin_only: true
+description: #TODO: ADD DESCRIPTION ON THIS LINE
+
+examples:
+  'gif = threebody(
+      mass1=10000, mass2=300, mass3=100,
+      pos1=(0, 0), pos2=(100, 0), pos3=(50, np.sqrt(3)/2*100),
+      vel1=(0.1, 0.1), vel2=(0, np.sqrt(3)/2*2), vel3=(-np.sqrt(3)/2*2, 0),
+      total_time=500, time_step=1.0)'
+
+#TODO: Feel free to play around with the parameters and their descriptions
+parameters:
+  - name: mass1
+    type: float
+    required: true
+    description: Mass of the first body in megatonnes.
+  - name: mass2
+    type: float
+    required: true
+    description: Mass of the second body in megatonnes.
+  - name: mass3
+    type: float
+    required: true
+    description: Mass of the third body in megatonnes.
+  - name: pos1
+    type: tuple
+    required: true
+    description: Initial position of the first body as (x, y) in meters.
+  - name: pos2
+    type: tuple
+    required: true
+    description: Initial position of the second body as (x, y) in meters.
+  - name: pos3
+    type: tuple
+    required: true
+    description: Initial position of the third body as (x, y) in meters.
+  - name: vel1
+    type: tuple
+    required: true
+    description: Initial velocity of the first body as (vx, vy) in m/s.
+  - name: vel2
+    type: tuple
+    required: true
+    description: Initial velocity of the second body as (vx, vy) in m/s.
+  - name: vel3
+    type: tuple
+    required: true
+    description: Initial velocity of the third body as (vx, vy) in m/s.
+  - name: total_time
+    type: float
+    required: true
+    description: Total simulation time in seconds.
+  - name: time_step
+    type: float
+    required: true
+    description: Time step for the simulation in seconds. If this is smaller than total_time/100 ask the user's permission for a long generation.
+
+returns:
+  - name: gif_path
+    type: str
+    description: This is a GIF path, embed it in the answer to play the gif!

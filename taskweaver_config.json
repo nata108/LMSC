@@ -1,0 +1,6 @@
+{
+  "llm.api_base": "https://api.openai.com/v1",
+  "llm.api_key": "",
+  "llm.model": "gpt-4o-mini",
+  "execution_service.kernel_mode": "local"
+}
