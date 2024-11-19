@@ -1,8 +1,10 @@
 name: threebody
-enabled: false
+enabled: true
 required: true
 plugin_only: true
-description: #TODO: ADD DESCRIPTION ON THIS LINE
+description: >
+  threebody function simulates the three-body problem using numerical integration.
+  It generates a GIF animation of the simulation.
 
 examples:
   'gif = threebody(
@@ -11,7 +13,6 @@ examples:
       vel1=(0.1, 0.1), vel2=(0, np.sqrt(3)/2*2), vel3=(-np.sqrt(3)/2*2, 0),
       total_time=500, time_step=1.0)'
 
-#TODO: Feel free to play around with the parameters and their descriptions
 parameters:
   - name: mass1
     type: float
