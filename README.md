@@ -4,7 +4,7 @@ This repository contains the workshop support materials.
 Please clone the repository by running the following command in your terminal:
 
 ```bash
-git clone https://github.com
+git clone https://github.com/nata108/LMSC.git
 ```
 
 ## Task 1 - Clone TaskWeaver
@@ -87,4 +87,4 @@ Tip: Ask the agent to fall back to default parameters for "less simple" solution
 
 ## Optional Task 5 - Create your own plugin
 
-Building on the examples provided come up with your own plugin.
+Building on the examples provided come up with your own plugin. Find more details on plugins in: https://microsoft.github.io/TaskWeaver/docs/plugin/plugin_intro/
