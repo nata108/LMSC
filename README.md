@@ -7,6 +7,13 @@ Please clone the repository by running the following command in your terminal:
 git clone https://github.com/nata108/LMSC.git
 ```
 
+Create a new virtual environment in VSCode type
+```> Python: Create Environment``` in the top search bar. (Or use conda / Python venv)
+
+Hit venv and select the python version you want to use, do NOT install any requirements yet.
+
+Open a new terminal to activate the environment automatically. (Or activate conda / venv).
+
 ## Task 1 - Clone TaskWeaver
 
 To start using TaskWeaver, you need to clone the repository. You can do this by running the following command in your terminal:
@@ -27,6 +34,12 @@ Then, install the required packages:
 pip install -r requirements.txt
 ```
 
+Install Taskweaver as a module for plugins:
+
+```bash
+pip install -e .
+```
+
 ### Configuring TaskWeaver
 
 To configure TaskWeaver navigate to the `project` directory and locate `taskweaver_config.json`.
@@ -40,6 +53,11 @@ You should add the following lines to the file:
   "execution_service.kernel_mode": "local"
 }
 ```
+
+The API key is provided during the workshop, but to experiment on your own later, you will need to obtain one from the OpenAI Platform. You have to register at https://platform.openai.com and create an API key at https://platform.openai.com/api-keys
+
+The service is prepaid, you will need to add a few dollars to your account to use it. You get charged based on the number of tokens used.
+Check the pricing here: https://openai.com/api/pricing/ 
 
 We will work with OpenAI's fastest model, `gpt-4o-mini`. The API key will be given during the workshop. Setting the kernel mode to `local` will allow the LLM agent to run code on your machine without setting up a complex development container environment (for production use, you should remove this).
 
